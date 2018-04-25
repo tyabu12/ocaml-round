@@ -1,4 +1,5 @@
 opam-version: "1.2"
+name: "round"
 version: "1.0"
 maintainer: "tyabu1212@gmail.com"
 authors: ["Tomohito Yabu"]
@@ -13,7 +14,10 @@ build: [
     "-j" jobs
     "@install"]
 ]
+install: ["jbuilder" "install"]
+remove: ["ocamlfind" "remove" "round"]
 depends: [
   "jbuilder" {build & >= "1.0+beta20"}
+  "ocamlfind" {build}
 ]
 available: [ ocaml-version >= "4.06.0" ]

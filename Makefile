@@ -1,6 +1,9 @@
 build:
 	jbuilder build @install
 
+install:
+	jbuilder install
+
 test:
 	jbuilder runtest
 
