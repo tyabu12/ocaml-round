@@ -16,12 +16,12 @@ binary operators and sqrt in OCaml.
 
 To install the library without test:
 ```
-$ opam pin add -y round .
+$ opam pin add -y round git@github.com:tyabu12/ocaml-round.git
 ```
 
 To install the library with test:
 ```
-$ opam pin add -yn round .
+$ opam pin add -yn round git@github.com:tyabu12/ocaml-round.git
 $ opam install -t round
 ```
 The result will be the following:
