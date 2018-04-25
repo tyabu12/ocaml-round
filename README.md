@@ -52,5 +52,4 @@ The generated docs can then be found locally at
 
 ## License
 
-Licensed under the Apache License, Version 2.0:
-https://apache.org/licenses/LICENSE-2.0
+See [LICENSE.md](LICENSE.md)
