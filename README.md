@@ -9,22 +9,21 @@ binary operators and sqrt in OCaml.
 ## Requirements
 
 - OCaml (>= 4.02.0)
-- [Jbuilder](https://github.com/ocaml/dune) (>= 1.0+beta20)
-- [odoc](https://github.com/ocaml/odoc) (for docs generation)
+- opam
 
 
-## Build  & Test
+## Installation with opam
 
-To build the library:
+To install the library without test:
 ```
-$ make build
-```
-
-To run the tests:
-```
-$ make test
+$ opam pin add -y round .
 ```
 
+To install the library with test:
+```
+$ opam pin add -yn round .
+$ opam install -t round
+```
 The result will be the following:
 ```
 x = 1.000000e+00, y = 1.000000e-40, z = -1.000000e-40
@@ -45,11 +44,19 @@ round Down:
 You can confirm behavior of floating-point rounding direction.
 
 
+## Uninstallation
+```
+$ opam pin remove round
+```
+
+
 ## Documentation
 
-To generate docs:
+To generate docs, [odoc](https://github.com/ocaml/odoc) (for docs generation) 
+is needed.
+
 ```
-$ make doc
+$ jbuilder build @doc
 ```
 
 The generated docs can then be found locally at
