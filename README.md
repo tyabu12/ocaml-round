@@ -1,13 +1,17 @@
 # round
 
+[![Build Status](https://travis-ci.org/tyabu12/ocaml-round.svg?branch=master)](https://travis-ci.org/tyabu12/ocaml-round)
+
 **Round** is the library to manages the floating-point rounding direction for 
 binary operators and sqrt in OCaml. 
+
 
 ## Requirements
 
 - OCaml (>= 4.06.0)
 - [Jbuilder](https://github.com/ocaml/dune) (>= 1.0+beta20)
 - [odoc](https://github.com/ocaml/odoc) (for docs generation)
+
 
 ## Build  & Test
 
@@ -40,6 +44,7 @@ round Down:
 ```
 You can confirm behavior of floating-point rounding direction.
 
+
 ## Documentation
 
 To generate docs:
@@ -49,6 +54,7 @@ $ make doc
 
 The generated docs can then be found locally at
 `./_build/default/_doc/_html/index.html`.
+
 
 ## License
 
