@@ -3,7 +3,7 @@
 **Round** is the library to manages the floating-point rounding direction for 
 binary operators and sqrt in OCaml. 
 
-## Requirement
+## Requirements
 
 - OCaml (>= 4.06.0)
 - [Jbuilder](https://github.com/ocaml/dune) (>= 1.0+beta20)
