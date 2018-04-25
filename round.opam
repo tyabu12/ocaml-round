@@ -1,0 +1,19 @@
+opam-version: "1.2"
+version: "1.0"
+maintainer: "tyabu1212@gmail.com"
+authors: ["Tomohito Yabu"]
+homepage: "https://github.com/tyabu12/ocaml-round"
+bug-reports: "https://github.com/tyabu12/ocaml-round/issues"
+dev-repo: "https://github.com/tyabu12/ocaml-round.git"
+license: "Apache-2.0"
+build: [
+  ["jbuilder" "build"
+    "--only" "round"
+    "--root" "."
+    "-j" jobs
+    "@install"]
+]
+depends: [
+  "jbuilder" {build & >= "1.0+beta20"}
+]
+available: [ ocaml-version >= "4.06.0" ]
