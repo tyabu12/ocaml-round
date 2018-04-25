@@ -8,7 +8,7 @@ binary operators and sqrt in OCaml.
 
 ## Requirements
 
-- OCaml (>= 4.06.0)
+- OCaml (>= 4.02.0)
 - [Jbuilder](https://github.com/ocaml/dune) (>= 1.0+beta20)
 - [odoc](https://github.com/ocaml/odoc) (for docs generation)
 
