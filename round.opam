@@ -8,11 +8,10 @@ bug-reports: "https://github.com/tyabu12/ocaml-round/issues"
 dev-repo: "https://github.com/tyabu12/ocaml-round.git"
 license: "Apache-2.0"
 build: [
-  ["jbuilder" "build"
-    "--only" "round"
-    "--root" "."
-    "-j" jobs
-    "@install"]
+  [ "jbuilder" "build" "--only" "round" "--root" "." "-j" jobs "@install" ]
+]
+build-test: [
+  [ "jbuilder" "build" "--only" "round" "--root" "." "-j" jobs "@runtest" ]
 ]
 install: ["jbuilder" "install"]
 remove: ["ocamlfind" "remove" "round"]
