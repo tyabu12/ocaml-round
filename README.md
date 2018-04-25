@@ -12,7 +12,7 @@ binary operators and sqrt in OCaml.
 - opam
 
 
-## Installation with opam
+## Installation
 
 To install the library without test:
 ```
