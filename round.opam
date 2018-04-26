@@ -1,22 +1,18 @@
 opam-version: "1.2"
 name: "round"
 version: "1.0"
-maintainer: "tyabu1212@gmail.com"
-authors: ["Tomohito Yabu"]
+maintainer: "Tomohito Yabu <tyabu1212@gmail.com>"
+authors: ["Tomohito Yabu <tyabu1212@gmail.com>"]
 homepage: "https://github.com/tyabu12/ocaml-round"
 bug-reports: "https://github.com/tyabu12/ocaml-round/issues"
 dev-repo: "https://github.com/tyabu12/ocaml-round.git"
 license: "Apache-2.0"
-build: [
-  [ "jbuilder" "build" "--only" "round" "--root" "." "-j" jobs "@install" ]
-]
-build-test: [
-  [ "jbuilder" "build" "--only" "round" "--root" "." "-j" jobs "@runtest" ]
-]
-install: ["jbuilder" "install"]
+build: [ "make" ]
+build-test: [ "make" "test" ]
+install: ["make" "install"]
 remove: ["ocamlfind" "remove" "round"]
 depends: [
   "jbuilder" { build & >= "1.0+beta20" }
   "ocamlfind"
 ]
-available: [ ocaml-version >= "4.02.0" ]
+available: [ ocaml-version >= "4.02.3" ]
