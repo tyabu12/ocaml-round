@@ -10,7 +10,7 @@ install:
 	jbuilder install --root .
 
 uninstall:
-	ocamlfind remove round
+	jbuilder uninstall --root .
 
 doc:
 	jbuilder build --root . @doc
