@@ -7,9 +7,9 @@ homepage: "https://github.com/tyabu12/ocaml-round"
 bug-reports: "https://github.com/tyabu12/ocaml-round/issues"
 dev-repo: "https://github.com/tyabu12/ocaml-round.git"
 license: "Apache-2.0"
-build: [ "make" ]
-build-test: [ "make" "test" ]
-install: ["make" "install"]
+build: [ make ]
+build-test: [ make "test" ]
+install: [ make "install"]
 remove: ["ocamlfind" "remove" "round"]
 depends: [
   "jbuilder" { build & >= "1.0+beta20" }
