@@ -2,32 +2,40 @@
 
 [![Build Status](https://travis-ci.org/tyabu12/ocaml-round.svg?branch=master)](https://travis-ci.org/tyabu12/ocaml-round)
 
-**round** is the library to manages the floating-point rounding direction for 
-binary operators and sqrt in OCaml. 
+**round** is a floating-point rounding control library for OCaml.
 
+## Requirements
+
+* GNU make
+* OCaml (>= 4.02.3)
+* [dune](https://github.com/ocaml/dune) (>= 1.2)
 
 ## Installation
 
-Make sure you have the required dependencies installed:
-- GNU make
-- OCaml (>= 4.02.3)
-- [Jbuilder](https://github.com/ocaml/dune) (>= 1.0+beta20)
+### Using opam
 
-Then, run:
+```sh
+opam pin add -y round git@github.com:tyabu12/ocaml-round.git
 ```
-$ make
-$ make install
+
+### From sources
+
+```sh
+make
+make install
 ```
 
 ### Test
 
 You can confirm behavior of floating-point rounding direction:
-```
-$ make test
+
+```sh
+make test
 ```
 
 The result will be the following:
-```
+
+```sh
 x = 1.000000e+00, y = 1.000000e-40, z = -1.000000e-40
 round NearestTiesToEven:
   x + y = 1.000000000000000000e+00
@@ -44,38 +52,20 @@ round Down:
 ...
 ```
 
-
 ## Documentation
 
 To generate docs, [odoc](https://github.com/ocaml/odoc) is required.
-```
-$ make doc
+
+```sh
+make doc
 ```
 
 The generated docs can then be found locally at
 `./_build/default/_doc/_html/index.html`.
 
-
 ## Installation by Opam
 
 You can install round directly by opam.
-
-### Requirements
-
-- OCaml (>= 4.02.3)
-- opam
-
-### Installation
-
-```
-$ opam pin add -y round git@github.com:tyabu12/ocaml-round.git
-```
-
-### Uninstallation
-```
-$ opam pin remove round
-```
-
 
 ## License
 
