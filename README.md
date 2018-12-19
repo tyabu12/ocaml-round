@@ -25,7 +25,7 @@ make
 make install
 ```
 
-### Test
+## Test
 
 You can confirm behavior of floating-point rounding direction:
 
@@ -61,11 +61,7 @@ make doc
 ```
 
 The generated docs can then be found locally at
-`./_build/default/_doc/_html/index.html`.
-
-## Installation by Opam
-
-You can install round directly by opam.
+`_build/default/_doc/_html/index.html`.
 
 ## License
 
