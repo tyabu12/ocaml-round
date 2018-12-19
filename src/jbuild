@@ -1,7 +1,0 @@
-(jbuild_version 1)
-
-(library
- ((name         round)
-  (public_name  round)
-  (c_names      (stubs))))
-

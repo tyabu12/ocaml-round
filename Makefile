@@ -1,21 +1,21 @@
 all: build
 
 build:
-	jbuilder build --root . @install
+	dune build @install
 
 test:
-	jbuilder build --root . @runtest
+	dune build @runtest --force
 
 install:
-	jbuilder install --root .
+	dune install
 
 uninstall:
-	jbuilder uninstall --root .
+	dune uninstall
 
 doc:
-	jbuilder build --root . @doc
+	dune build @doc
 
 clean:
-	jbuilder clean --root .
+	dune clean
 
 .PHONY: all build test install uninstall doc clean
