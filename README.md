@@ -4,6 +4,10 @@
 
 **round** is a floating-point rounding control library for OCaml.
 
+round provides functions about floating-point with specified rounding directions.
+
+round follows IEE-754 that defines rounding behaviors about basic operators and sqrt functions.
+
 ## Requirements
 
 * GNU make
