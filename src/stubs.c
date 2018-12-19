@@ -1,7 +1,7 @@
 /*
  * import from hwround.hpp in kv library:
  *   http://verifiedby.me/kv/
- **/
+ */
 
 #include <stdio.h>
 #include <math.h>
@@ -58,7 +58,6 @@ static void change_round_mode(int mode) {
   }
 #endif
 }
-
 
 CAMLprim value addc(value mode, value x, value y) {
     volatile double r, x1 = Double_val(x), y1 = Double_val(y);
