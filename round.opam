@@ -1,7 +1,7 @@
 opam-version: "2.0"
 name: "round"
 version: "0.1"
-synopsis: "A floating-point rounding control library for OCaml."
+synopsis: "A floating-point rounding control library for OCaml"
 description: """
 round provides functions about floating-point with specified rounding directions.
 round follows IEE-754 that defines rounding behaviors about basic operators and sqrt functions.
@@ -11,7 +11,7 @@ authors: "Tomohito Yabu <tyabu1212@gmail.com>"
 license: "Apache 2.0"
 homepage: "https://github.com/tyabu12/ocaml-round"
 bug-reports: "https://github.com/tyabu12/ocaml-round/issues"
-dev-repo: "https://github.com/tyabu12/ocaml-round.git"
+dev-repo: "git+https://github.com/tyabu12/ocaml-round.git"
 depends: [
   "ocaml" {>= "4.02"}
   "dune" {build & >= "1.2"}
